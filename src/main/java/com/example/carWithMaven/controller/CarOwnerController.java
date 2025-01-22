@@ -32,7 +32,6 @@ public class CarOwnerController {
 		this.leaseHistoryService = leaseHistoryService;
 	}
 
-	// to Register Owner
 	@PostMapping("/registerCarOwner")
 	public ResponseEntity<String> registerCarOwner(@RequestBody CarOwner carOwner) {
 		CarOwner savedCarOwner = carOwnerService.registerCarOwner(carOwner);
