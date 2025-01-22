@@ -38,6 +38,7 @@ public class CarOwnerController {
 		return ResponseEntity.ok("Car Owner Registered Successfully, OwnerId is:" + savedCarOwner.getCarOwnerId());
 	}
 
+	/* adding car by carOwner **/
 	@PostMapping("/enrollCar")
 	public ResponseEntity<String> enrollCar(@RequestBody Car car) {
 		Car enrolledCar = carService.enrollCar(car);
